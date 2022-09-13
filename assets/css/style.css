@@ -1,2 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
 
+body {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: lightgrey;
+  color: black;
+  }
+
+
+header {
+  font-weight: bold;
+}
+
+
+
+
+header h1{
+  /* text-align: left; */
+  margin: 5px;
+  color: black;
+  border-style: none;
+  background-color: darkgray;
+  padding-bottom: 15px;
+}
+
+
+.nav-header ul {
+  display: flex;
+  float: right;
+}
+
+.nav-header li {
+  display: inline-flex;
+  justify-content: flex-end;
+  padding-left: 30px;
+  padding-right: 10px;
+  margin-top: -30px;
+  text-decoration: underline 5px;
+
+  
+}
+
+.container {
+  display: flex;
+  border-style: dotted;
+  margin-left: 20rem;
+  margin-right: 180px;
+  padding-left: 100px;
+  border-left-style: solid;
+}
+
+.my-details {
+  color: darkgreen;
+  display: flex;
+  justify-content: end;
+  /* margin-left: 20rem;
+  margin-right: 180px; */
+}
+
+.project-images {
+  /* width: 100%; */
+  display: inline-block;
+  
+  
+  /* flex-direction: column; */
+  
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content:space-between; */
+}
+
+
+/* #about-me {
+  display: flex;
+  float: right;
+  
+} */
+
+/* #about-me p{
+  padding-top: 5rem;
+  margin-left: 150px;
+  border-left: 5px solid;
+  border-color: white;
+  display: flex;
+  float: right;
+} */
+  
+
+
+/* #about-me h3{
+  display: inline-block;
+  margin-left: 0px;
+  padding-top: 5rem;
+  
+
+} */
+
+
+
+
+@media screen and (max-width: 992px) {}
+  
+
+
+@media screen and (max-width: 768px) {}
+  
+
+@media screen and (max-width: 576px) {}
+  
 
