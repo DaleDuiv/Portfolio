@@ -9,8 +9,9 @@ body {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  background-color: lightgrey;
+  background-color: white;
   color: black;
+
   }
 
 
@@ -18,17 +19,28 @@ header {
   font-weight: bold;
 }
 
-
+.nav-header {
+  margin: 8px;
+  background-color: black;
+}
 
 
 header h1{
-  /* text-align: left; */
+  
   margin: 5px;
   color: black;
   border-style: none;
-  background-color: darkgray;
+  background-color: lightskyblue;
   padding-bottom: 15px;
 }
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  justify-content:space-between;
+}
+
 
 
 .nav-header ul {
@@ -49,63 +61,114 @@ header h1{
 
 .container {
   display: flex;
-  border-style: dotted;
-  margin-left: 20rem;
-  margin-right: 180px;
-  padding-left: 100px;
+  flex-direction: column; 
+  /* border-style: dotted; */
+  /* margin-left: 20rem; */
+  /* margin-right: 180px; */
+  /* padding-left: 60px; */
   border-left-style: solid;
+  flex-grow: 1;
+  align-items: center;
+  /* flex-flow: column; */
+}
+.my-details{
+  width: 80%;
+  display: flex;
+  /* justify-content:space-between; */
+}
+
+.bottom-images {
+  width: 80%;
+  display: flex;
+  justify-content:space-between;
+  /* width: 50px; */
+}
+
+#main-image img{
+  width: 100%
+}
+
+.bottom-images img{
+  width: 40%
+}
+
+.welcome-title{
+  width: 100%;
+  display: flex;
+}
+
+.welcome-header{
+  flex-basis: 150px;
+}
+
+#about-me h3{
+  width: 100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content:space-between; */
+
+}
+
+
+
+.my-socials li {
+  display:inline-flex;
+  justify-content: flex-end;
+  text-decoration: underline 5px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  
+}
+
+.container .project-images {
+  flex-grow: 1;
+}
+
+#work {
+  width: 100%;
+  display: flex;
+}
+
+#work h3 {
+  flex-basis: 150px;
 }
 
 .my-details {
   color: darkgreen;
-  display: flex;
-  justify-content: end;
-  /* margin-left: 20rem;
-  margin-right: 180px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+
 }
 
-.project-images {
+.myinfo {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.about-me-content {
   /* width: 100%; */
-  display: inline-block;
+
+}
+
+.project-images #main-image{
+
+  max-width: 80%; 
   
   
   /* flex-direction: column; */
-  
-}
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-  /* justify-content:space-between; */
+ 
 }
 
 
-/* #about-me {
-  display: flex;
-  float: right;
-  
-} */
-
-/* #about-me p{
-  padding-top: 5rem;
-  margin-left: 150px;
-  border-left: 5px solid;
-  border-color: white;
-  display: flex;
-  float: right;
-} */
-  
 
 
-/* #about-me h3{
-  display: inline-block;
-  margin-left: 0px;
-  padding-top: 5rem;
-  
-
-} */
 
 
+.my-socials {
+  /* display: flex;
+  float: left;  */
+}
 
 
 @media screen and (max-width: 992px) {}
