@@ -10,8 +10,8 @@
   background-color: blue;
   color: white;
   z-index: 0;
-  width: fit-content;
-  
+  height: 60px;
+    
 }
 
 
@@ -57,34 +57,44 @@
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.1);
-  height: 840px;
   justify-content: center;
   align-items: center;
   color: black;
+  margin-top: -50px;
   
 
 }
 #home::before{
   content: "";
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   right: 0;
-  background: url('../images/3d-landscape-grassy-hill-with-clouds-blue-sky.jpg') no-repeat center center/cover;
+  background: url('../images/portfoliobackgroundimg.png') no-repeat center center/cover;
   height: 900px;
   width: 100%;
   z-index: -1;
-  opacity: 0.8;
+
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid black; */
   align-items: center;
   position: absolute;
   top: 30%;
   right: 10%;
 }
+
+.intro-heading{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  justify-content: flex-start;
+  align-items:flex-start; 
+  display: flex;
+  width: 200px;
+  color: white;
+  }
 
 .headings{
   font-family: Arial, Helvetica, sans-serif;
@@ -93,9 +103,8 @@
   justify-content: flex-start;
   align-items:flex-start; 
   display: flex;
-  background-color: red;
   width: 200px;
-  }
+  } 
 
 #pic{
   display: inline-flex;
@@ -120,8 +129,8 @@
   width: fit-content ;
   align-items:center;
   margin-left: 10%;
-  background-color: brown;  
   flex: 60%;
+  font-size: 18px;
 
 }
 #intro h2{
@@ -131,10 +140,9 @@
 .style-content{
 display: inline-flex;
 flex-direction: row;
-/* background-color: rgba(0, 0, 0, 0.9); */
+background-color: rgba(0, 0, 0, 0.9);
 padding: 20px;
 color: white;
-background-color: purple;
 width: 100%;
 
 }
@@ -145,9 +153,9 @@ width: 100%;
   flex-wrap: wrap;
   box-sizing: border-box;
   border-left: 2px solid white;
-  background-color: blue;
   flex: content;
   flex-direction: column;
+  align-items: center;
 }
 
 .style-mainimage {
@@ -238,7 +246,12 @@ a:visited {
   .navbar{
     justify-content:flex-start;
   }
-    
+  #intro {
+    font-size: 17px;
+  } 
+  #home{
+    margin-top: -70px;
+  }
   
 }
   
@@ -259,7 +272,12 @@ a:visited {
   .navbar{
     justify-content:flex-start;
   }
-    
+  #intro {
+    font-size: 16px;
+  } 
+  #home{
+    margin-top: -70px;
+  }
   
 }
   
@@ -276,9 +294,16 @@ a:visited {
   .style-content #intro h2{
     font-size: 22px;
   }
-.navbar{
-  justify-content:flex-start;
+  .navbar{
+    justify-content:flex-start;
+  }
+  #intro {
+    font-size: 14px;
+  } 
+  #home{
+    margin-top: -70px;
+  }
 }
-}
+
   
 
