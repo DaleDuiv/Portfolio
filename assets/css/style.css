@@ -220,22 +220,35 @@ a:visited {
 
 
 
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   .style-content{
     display: flex;
     flex-direction: row;
+    align-items: row;
   }
 
 }
   
 
 
-@media screen and (max-width: 768px) {
-  
+@media only screen and (max-width: 768px) {
+  .style-content{
+    display: flex;
+    flex-direction: row;
+    align-items: row;
+  }
+
 }
   
 
-@media screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
+  .style-content{
+    display: flex;
+    flex-direction: row;
+    align-items: row;
+  }
+
+  
 
 }
   
