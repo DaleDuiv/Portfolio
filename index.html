@@ -6,33 +6,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <!-- add reset css -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
   <header>
-    <h1 class="title">
-      Dale's Portfolio
-    </h1>
-    <nav class="nav-header">
+    <h1 id="mainheading">Portfolio</h1>
+    <nav class="navbar">
       <ul>
-        <li> <a href="#about-me"></a>About Me</li>
-        <li> <a href="#work"></a>Work</li>
-        <li> <a href="#contact-me"></a>Contact Me</li>
-        <li> <a href="resume"></a>Resume</li>
+        <li> <a href="#intro">About Me</a></li>
+        <li> <a href="#portfolio">Work</a></li>
+        <li> <a href="#style-footer">Contact Me</a></li>
+        <li> <a href="#">Resume</a></li>
       </ul>
     </nav>
-  </header>
 
-  <main>
-    <div class="container welcome-title">
-      <h2 class="container welcome-header"> Welcome to my 1st Edition Portfolio</h2>
+
+  <section id="home"> 
+    <div class="main">
+      <h1 class="headings"> Hi, I'm <br> Dale Duivesteyn </h1>
+      <!-- This button is yet to be utilised -->
+      <!-- <button class="btn">
+        Hire me
+      </button> -->
     </div>
-    <section class="myinfo">
-      <h3 id="container about-me">About me</h3>
-      <div class="container my-details">
-        <p id="about-me-content">I'm Dale, I'm new to coding, trying to learn this as I continue to work Full-time at a financial instituion
+
+
+  </section> 
+
+  <section id="about">
+    <h1 class = "headings">About Me<h1>
+    <div id="pic">
+        <img src="./assets/images/IMG_0092.JPG" alt="image of Dale">
+      <div id="intro">
+        <h2>Dale Duivesteyn</h2>
+        <p>I'm Dale, I'm new to coding, trying to learn this as I continue to work Full-time at a financial instituion
           as a Relationship Consultant.
           I live South of Adelaide, South Australia. Previously studied at Flinders University, however moved into
           full-time work and didn't complete University. Prior study was Reynella East College.
@@ -48,46 +57,36 @@
           Watching Youtube is also a pass-time I enjoy.
           <br>
           My current skills Include a basic knowledge of HTML and CSS. I have developed skills specific to a financial
-          institution in the Service/Sales section of retail banking. I am looking for a change of direction.
-        </p>
+          institution in the Service/Sales section of retail banking. I am looking for a change of direction.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="work">
-      <h3>Work</h3>
-      <div class="container project-images">
-        <div id="main-image">
-          <img src="./assets/images/portfolioimage.png" alt="first-project">
-        </div>
+  <section id="portfolio">
+    <h3 class="headings">Portfolio</h3>
+    <div class="gallery">
+      <a href="https:www.example.com" target="_blank"> <img id="firstproject" src="./assets/images/portfolioimage.png" alt="portolio first image"> </a>
+      <a href="https:www.example.com" target="_blank"><img class="comingsoon1234" src="./assets/images/comingsoonneon.png" alt="second project image"> </a>
+      <a href="https:www.example.com" target="_blank"><img class="comingsoon1234" src="./assets/images/comingsoonneon2.png" alt="third project image"> </a>
+      <a href="https:www.example.com" target="_blank"><img class="comingsoon1234"src="./assets/images/comingsoonneon3.png" alt="fourth project image"> </a>
+      <a href="https:www.example.com" target="_blank"><img class="comingsoon1234"src="./assets/images/comingsoonneon4.png" alt="fifth project image"> </a>
 
-        <div class ="bottom-images">
-          <img src="./assets/images/comingsoonneon.png" alt="second-project">
-          <img src="./assets/images/comingsoonneon2.png" alt="third-project">
-        </div>
-        <div class ="bottom-images">
-          <img src="./assets/images/comingsoonneon3.png" alt="fourth-project">
-          <img src="./assets/images/comingsoonneon4.png" alt="fifth-project">
-        </div>
-
-      </div>
-
-      </div>
-    </section>
-
+    </div>
+  </section>
 
 
 
   </main>
 
-  <footer id="contact-me">
-    <h3>Contact Me</h3>
-    <div class="container my-socials">
+  <footer id="style-footer">
+    <h3 class="headings">Contact Me</h3>
+    <div>
       <ul>
         <li href>0466 695 094</li>
         <li href>daduivesteyn@gmail.com</li>
-        <li href>Github</li>
-        <li href>Linkedin</li>
-        <li href>Instagram</li>
+        <a href="https://github.com/DaleDuiv" target="_blank"><li href>Github</li></a>
+        <a href="https://www.linkedin.com/in/dale-duivesteyn/" target="_blank"><li href>Linkedin</li></a>
+        <a href="https://www.instagram.com/duiv0005/" target="_blank"><li href>Instagram</li></a>
       </ul>
     </div>
   </footer>

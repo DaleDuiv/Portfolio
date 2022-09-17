@@ -3,175 +3,276 @@
   padding: 0;
   box-sizing: border-box;
   
+  
+}
+#mainheading{
+  display: flex;
+  background-color: blue;
+  color: white;
+  z-index: 0;
+  width: fit-content;
+  
 }
 
-body {
-  position: relative;
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin-top: -40px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.navbar ul li {
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+
+
+}
+.navbar ul li a {
+  text-decoration: none; 
+  color: white;
+  padding: 8px 25px;
+}
+.navbar ul li a:hover{
+  background-color: white;  
+  color: black;
+  box-shadow: 0 0 10px white;
+}
+
+
+
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 840px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  
+
+}
+#home::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url('../images/3d-landscape-grassy-hill-with-clouds-blue-sky.jpg') no-repeat center center/cover;
+  height: 900px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+.headings{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 3rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center; 
+  display: inline-flex;
+ 
+  }
+
+/* .btn {
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  outline: none;
+  transition: 0.5s ease;
+  font-size: 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
   background-color: white;
   color: black;
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+  font-weight: bold;
 
+} */
+
+#about{
+  display: inline-flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-size: 12px;
+  color: white;
+  
+  }
+#pic{
+  display: inline-flex;
+  margin-left: 265px;
+  border-left: 2px solid white;
+  padding-left: 150px;
+  align-items: center;
+}
+#pic img {
+  width: 400px;
+  height: 400px;
+  
+}
+
+#intro{
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  width: 50%;
+  align-items: center;
+  margin-left: 200px;
+
+  
+
+}
+#intro h2{
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+#portfolio{
+display: inline-flex;
+flex-direction: row;
+background-color: rgba(0, 0, 0, 0.9);
+align-items: center;
+padding: 20px;
+color: white;
+}
+
+.gallery{
+  display: inline-flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: 265px;
+  border-left: 2px solid white;
+  padding-left: 150px;
+  
+}
+
+.gallery img{
+  width: 360px;
+  height: 240px;
+  margin: 10px;
+}
+
+.gallery img:hover{
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+  cursor: pointer;
+  transition: 0.5s ease;
+  transform: translate(0, -20px);
+}
+
+.gallery img:active {
+
+}
+
+
+#firstproject{
+  /* width: 82.5%; */
+  height: 500px;
+  width: 900px;
+  /* margin: 20px 500px; */
+}
+
+#portfolio .gallery .comingsoon1234 {
+  width: 600px;
   }
 
 
-header {
-  font-weight: bold;
-}
 
-.nav-header {
-  margin: 8px;
-  background-color: black;
-}
-
-
-header h1{
+.primary-image {
+  display: flex;
+  width: 80%;
   
-  margin: 5px;
-  color: black;
-  border-style: none;
-  background-color: lightskyblue;
-  padding-bottom: 15px;
+  
 }
 
-main {
+.primary-image img {
+width: 815px;
+
+}
+
+.secondary-image {
+  width: 100%;
+
+  
+  
+}
+
+.secondary-image img {
+  width: 200px;
+  height: 200px;  
+
+}
+
+#style-footer {
+  background-color:rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+footer ul {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 2%;
+  flex-direction: row;
   justify-content:space-between;
+  padding-left: 340px;
+  padding-right: 140px;
+  
 }
 
-
-
-.nav-header ul {
-  display: flex;
-  float: right;
-}
-
-.nav-header li {
+footer li {
   display: inline-flex;
-  justify-content: flex-end;
-  padding-left: 30px;
-  padding-right: 10px;
-  margin-top: -30px;
   text-decoration: underline 5px;
-
   
 }
-
-.container {
-  display: flex;
-  flex-direction: column; 
-  /* border-style: dotted; */
-  /* margin-left: 20rem; */
-  /* margin-right: 180px; */
-  /* padding-left: 60px; */
-  border-left-style: solid;
-  flex-grow: 1;
-  align-items: center;
-  /* flex-flow: column; */
-}
-.my-details{
-  width: 80%;
-  display: flex;
-  /* justify-content:space-between; */
-}
-
-.bottom-images {
-  width: 80%;
-  display: flex;
-  justify-content:space-between;
-  /* width: 50px; */
-}
-
-#main-image img{
-  width: 100%
-}
-
-.bottom-images img{
-  width: 40%
-}
-
-.welcome-title{
-  width: 100%;
-  display: flex;
-}
-
-.welcome-header{
-  flex-basis: 150px;
-}
-
-#about-me h3{
-  width: 100%;
-  display: flex;
-  /* flex-wrap: wrap; */
-  /* justify-content:space-between; */
+footer li:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+  font-weight: bold;
 
 }
-
-
-
-.my-socials li {
-  display:inline-flex;
-  justify-content: flex-end;
-  text-decoration: underline 5px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  
+a {
+  color: white;
 }
-
-.container .project-images {
-  flex-grow: 1;
-}
-
-#work {
-  width: 100%;
-  display: flex;
-}
-
-#work h3 {
-  flex-basis: 150px;
-}
-
-.my-details {
-  color: darkgreen;
-  /* display: flex; */
-  /* flex-direction: column; */
-
-}
-
-.myinfo {
-  width: 80%;
-  display: flex;
-  align-items: center;
-}
-
-.about-me-content {
-  /* width: 100%; */
-
-}
-
-.project-images #main-image{
-
-  max-width: 80%; 
-  
-  
-  /* flex-direction: column; */
  
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
 }
 
 
 
-
-
-
-.my-socials {
-  /* display: flex;
-  float: left;  */
+@media screen and (max-width: 992px) {
+  
 }
-
-
-@media screen and (max-width: 992px) {}
   
 
 
