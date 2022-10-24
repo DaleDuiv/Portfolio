@@ -160,12 +160,14 @@ width: 100%;
   align-items: center;
   }
 
+  
 .style-mainimage {
- max-width:800px;
+  max-width:800px;
  
 }
 .style-mainimage img {
   width: 100%;
+  
 }
 
 .style-secondimages{
